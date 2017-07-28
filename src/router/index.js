@@ -5,7 +5,7 @@ import Home from '../pages/Home.vue'
 import SystemConfig from '../pages/systeminfo/SystemConfig.vue'
 import Model1 from '../pages/baseinfo/RentEquipment/Model1.vue'
 import UsePlanData from '../pages/baseinfo/UseEquipmentPlanData/UsePlanData.vue'
- import NewsList from '../pages/systeminfo/NewsList.vue'
+import NewsList from '../pages/systeminfo/NewsList.vue'
 import FurEquipment from '../pages/baseinfo/FurEquipment/FurEquipment.vue'              
 import PurchaseEquipment from '../pages/baseinfo/PurchaseEquipment/PurchaseEquipment.vue' 
 

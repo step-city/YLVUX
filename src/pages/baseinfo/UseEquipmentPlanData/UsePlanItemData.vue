@@ -5,8 +5,8 @@
       <x-button class="left-menu" type="default" @click.native="toBack" text="<返回" mini></x-button>
       <x-button class="right-menu" v-if="!showapproval" type="warn" @click.native.prevent="_cancelApproval" text="撤销审批" mini></x-button>
     </div>
-    <div>
-      <p v-for="(list,index) in description" :key="index" v-if="description.length>0">
+    <div v-if="description.length>0">
+      <p v-for="(list,index) in description" :key="index">
         <formdetail header-label="序号" :header-value="index+1" :bodyItems="list">
           <div class="cartcontrol-wrapper" v-if="showapproval" slot="select">
             <x-button type="primary" mini @click.native="toDelete(list.ItemID)" text="删除"></x-button>

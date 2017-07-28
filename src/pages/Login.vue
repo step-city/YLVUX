@@ -35,7 +35,7 @@ export default {
         return {
             err:'',
             loginForm: {
-                userCode: '',
+                userCode: 'admin',//liuqijiang
                 password: ''
             }
         }
@@ -53,7 +53,6 @@ export default {
             setloginStatus:'setloginStatus'
         }),
         _resetForm() {
-            console.log("cancel!");
             this.$refs.userCode.reset()
             this.$refs.password.reset()
         },
@@ -75,7 +74,6 @@ export default {
                         let data = JSON.parse(res)
                         that.getUserData(data[0])
                         that.setUserInfo(data)
-                        console.log(data)
                         that.$vux.toast.show({
                             text: '登录成功，欢迎您使用本系统...',
                             type: "text",

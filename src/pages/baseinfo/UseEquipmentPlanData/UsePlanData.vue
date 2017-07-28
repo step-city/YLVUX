@@ -12,7 +12,7 @@
       <!-- 使用计划审批列表 -->
       <scroller v-model="scrollerStatus" height="-110" lock-x scrollbar-y ref="scroller" :bounce="isbounce" :use-pullup="showUp" :pullup-config="upobj" @on-pullup-loading="selPullUp">
         <div class="box2" style="padding:10px 0;overflow:scroll;-webkit-overflow-scrolling:touch;">
-          <p v-for="list,index in newUsers" :key="index">
+          <p v-for="(list,index) in newUsers" :key="index">
             <form-preview header-label="申请人" :header-value="list.AddName" :bodyItems="list" :footer-buttons="buttons1" :name="list"></form-preview>
           </p>
           <hr>
